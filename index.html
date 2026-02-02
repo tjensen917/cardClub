@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CardClub — Never Be Cardless</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">CardClub</div>
+      <nav class="site-nav">
+        <a href="#how-it-works">How it works</a>
+        <a href="#services">Services</a>
+        <a href="#membership">Membership</a>
+      </nav>
+      <button class="primary-button" id="open-auth">Log in / Sign up</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="pill">Monthly subscription · thoughtful gifting</p>
+          <h1>Never be cardless again.</h1>
+          <p>
+            CardClub keeps your recipient list, tone preferences, and occasion
+            dates in one place so you can send the right card at exactly the
+            right moment.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button" id="hero-cta">Start your subscription</button>
+            <button class="ghost-button" id="tour-cta">See how it works</button>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <strong>7 days</strong>
+              <span>delivery buffer</span>
+            </div>
+            <div>
+              <strong>1 dashboard</strong>
+              <span>for every recipient</span>
+            </div>
+            <div>
+              <strong>∞ cards</strong>
+              <span>never miss an occasion</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Next up</h2>
+          <p>Grace · Anniversary · Warm + heartfelt · Terracotta</p>
+          <div class="timeline">
+            <div>
+              <span>Today</span>
+              <strong>We design your card</strong>
+            </div>
+            <div>
+              <span>+3 days</span>
+              <strong>We print + send</strong>
+            </div>
+            <div>
+              <span>+7 days</span>
+              <strong>Card arrives</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how-it-works">
+        <div class="section-header">
+          <h2>How CardClub works</h2>
+          <p>
+            One intake form per recipient. We handle the timelines, reminders,
+            and delivery coordination.
+          </p>
+        </div>
+        <div class="grid three">
+          <article class="info-card">
+            <h3>1. Join the club</h3>
+            <p>
+              Subscribe monthly and unlock premium card curation and on-time
+              delivery.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>2. Add recipients once</h3>
+            <p>
+              Capture occasion, tone, sentiment, and color palettes just once.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>3. We handle the rest</h3>
+            <p>
+              Automatic scheduling ensures every card arrives a week before the
+              occasion.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt" id="services">
+        <div class="section-header">
+          <h2>Card selection services</h2>
+          <p>
+            Pick the vibe, colors, and sentiment. We match cards from our studio
+            catalog and keep you updated.
+          </p>
+        </div>
+        <div class="grid two">
+          <article class="info-card">
+            <h3>Recipient profiles</h3>
+            <ul>
+              <li>Occasion library (birthdays, anniversaries, milestones)</li>
+              <li>Personal tone tags</li>
+              <li>Signature sentiment prompts</li>
+              <li>Color and palette guidance</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Smart scheduling</h3>
+            <ul>
+              <li>Reminders 21, 14, and 7 days before</li>
+              <li>Production + shipping window built in</li>
+              <li>Order tracking inside your dashboard</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="membership">
+        <div class="section-header">
+          <h2>Membership options</h2>
+          <p>Choose a subscription that keeps you prepared year-round.</p>
+        </div>
+        <div class="grid three">
+          <article class="plan-card">
+            <h3>Starter</h3>
+            <p class="price">$19/mo</p>
+            <p>Up to 5 recipients</p>
+            <button class="ghost-button">Select plan</button>
+          </article>
+          <article class="plan-card highlight">
+            <h3>Signature</h3>
+            <p class="price">$39/mo</p>
+            <p>Up to 20 recipients</p>
+            <button class="primary-button">Most popular</button>
+          </article>
+          <article class="plan-card">
+            <h3>Concierge</h3>
+            <p class="price">$79/mo</p>
+            <p>Unlimited recipients</p>
+            <button class="ghost-button">Select plan</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section dashboard-section" id="dashboard">
+        <div class="section-header">
+          <h2>Your recipient dashboard</h2>
+          <p>
+            Fill out details once and CardClub will monitor every date for you.
+          </p>
+        </div>
+        <div class="dashboard">
+          <div class="dashboard-panel">
+            <h3>Add a recipient</h3>
+            <form id="recipient-form">
+              <label>
+                Recipient name
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                Occasion
+                <select name="occasion" required>
+                  <option value="">Choose one</option>
+                  <option>Birthday</option>
+                  <option>Anniversary</option>
+                  <option>Graduation</option>
+                  <option>New baby</option>
+                  <option>Thank you</option>
+                  <option>Just because</option>
+                </select>
+              </label>
+              <label>
+                Tone
+                <select name="tone" required>
+                  <option value="">Choose one</option>
+                  <option>Warm</option>
+                  <option>Playful</option>
+                  <option>Elegant</option>
+                  <option>Minimal</option>
+                  <option>Bold</option>
+                </select>
+              </label>
+              <label>
+                Sentiment
+                <input
+                  type="text"
+                  name="sentiment"
+                  placeholder="E.g. heartfelt, celebratory, supportive"
+                  required
+                />
+              </label>
+              <label>
+                Color palette
+                <input
+                  type="text"
+                  name="colors"
+                  placeholder="E.g. sage + cream"
+                  required
+                />
+              </label>
+              <label>
+                Occasion date
+                <input type="date" name="date" required />
+              </label>
+              <button class="primary-button" type="submit">Save recipient</button>
+            </form>
+          </div>
+          <div class="dashboard-panel">
+            <div class="dashboard-header">
+              <h3>Upcoming recipients</h3>
+              <p id="recipient-count">0 recipients saved</p>
+            </div>
+            <div class="recipient-list" id="recipient-list">
+              <p class="empty-state">Your saved recipients will appear here.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>CardClub © 2024 · Thoughtful reminders, effortless cards.</p>
+    </footer>
+
+    <div class="auth-modal" id="auth-modal" aria-hidden="true">
+      <div class="auth-card">
+        <button class="close-button" id="close-auth">✕</button>
+        <h2>Welcome to CardClub</h2>
+        <p>Log in or start your monthly subscription to build your dashboard.</p>
+        <div class="auth-tabs">
+          <button class="tab active" data-tab="login">Log in</button>
+          <button class="tab" data-tab="signup">Sign up</button>
+        </div>
+        <div class="auth-panel active" data-panel="login">
+          <form id="login-form">
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" required />
+            </label>
+            <button class="primary-button" type="submit">Log in</button>
+          </form>
+        </div>
+        <div class="auth-panel" data-panel="signup">
+          <form id="signup-form">
+            <label>
+              Full name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Subscription tier
+              <select name="plan" required>
+                <option value="">Choose a plan</option>
+                <option>Starter</option>
+                <option>Signature</option>
+                <option>Concierge</option>
+              </select>
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" required />
+            </label>
+            <button class="primary-button" type="submit">Create account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
